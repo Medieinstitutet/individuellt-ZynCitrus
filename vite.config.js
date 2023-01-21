@@ -6,7 +6,7 @@ då ska "base" här nedan vara "/fed22d-js-grundkurs-jenni-wumpus/"
  */
 
 export default defineConfig({
-  base: 'https://github.com/Medieinstitutet/individuellt-ZynCitrus', // TODO - ändra till ditt repo-namn
+  base: 'individuellt-ZynCitrus', // TODO - ändra till ditt repo-namn
   define: {
     'process.env': {},
   },

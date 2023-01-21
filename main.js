@@ -1,23 +1,67 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
+
+document.querySelector('#slideShow').innerHTML = `
+<div class="imgSlider">
+<img name=slider src="Assets/Slideshow/cola.png"></img><br>
+<button class="material-symbols-outlined" id="arrow_left">
+arrow_left
+</button>
+<button class="material-symbols-outlined" id="arrow_right">
+arrow_right
+</button>
+</div>
 `
+/*
+const logo = document.getElementById('logo');
+const noccoLogo = document.getElementById('noccoLogo');
+const slideShow = document.getElementById('slideShow');*/
+const menuBtn = document.getElementById('menuBtn')
+const closeBtn = document.getElementById('closeBtn')
+const arrowLeft = document.getElementById('arrow_left')
+const arrowRight = document.getElementById('arrow_right')
+document.querySelector(".noccoLogo").classList.remove("hidden");
+document.querySelector(".logo").classList.remove("hidden");
+menuBtn.addEventListener("click", toggleClass)
+closeBtn.addEventListener("click", toggleClass)
+arrowLeft.addEventListener("click", imageSliderMinus)
+arrowRight.addEventListener("click", imageSliderPlus)
+let i = 0;
+let images = [];
+images[0] = "Assets/Slideshow/cola.png";
+images[1] = "Assets/Slideshow/focus.png";
+images[2] = "Assets/Slideshow/frame.png";
 
-setupCounter(document.querySelector('#counter'))
+function imageSliderPlus(){
+	document.slider.src = images[i]; 
+	if(i < images.length - 1){
+	  i++; 
+	} else { 
+		i = 0;
+	}
+}
+
+function imageSliderMinus(){
+	document.slider.src = images[i]; 
+	if(i < 1){
+		i = images.length -1;
+	}else {
+	  i--; 
+  }
+}
+
+imageSliderPlus()
+
+function toggleClass(){
+  console.log('hej');
+
+  menuBtn.classList.toggle('hidden');
+  closeBtn.classList.toggle('show');
+  hamburger.classList.toggle('hidden');
+  hamburger.style.zIndex="100"
+  /*
+  slideShow.classList.toggle("hidden");
+  logo.classList.toggle("hidden");
+  noccoLogo.classList.toggle("hidden");*/
+
+}
