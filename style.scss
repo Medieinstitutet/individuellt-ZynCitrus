@@ -38,13 +38,15 @@
     animation-duration: 1.5s;
   }
   
-  #hamburger {
+  .hamburger {
     background-color: #222222;
     color: #ffffff;
     max-width: 100%;
     min-height: 100vh;
     position: sticky;
   }
+
+ 
   
   .hidden {
     display: none;
@@ -158,10 +160,10 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-    max-width: 80vh;
   }
 
   .slideShow img{
+    max-height: 80vh;
     border-radius: 20px;
   }
   
@@ -203,18 +205,17 @@
     max-width: 80%;
   }
   
-  .menulogo {
+  .menulogologo {
     height: 120px;
     width: 140px;
     left: 50%;
     top: 50%;
+    max-width: 10vh;
     /* display: flex;
     align-items: center;
     justify-content: center; */
   }
   
-  .menunoccologo {
-  }
   
   .card {
     padding: 2em;
