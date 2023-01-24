@@ -28,9 +28,7 @@
     overflow-x: hidden;
   }
   
-  img {
-    max-width: 80%;
-  }
+
   
   .mySlides {
     display: none;
@@ -156,12 +154,17 @@
     color: #fdfdfd;
   }
   
-  #slideShow {
+  .slideShow {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-    height: 100vh;
+    max-width: 80vh;
   }
+
+  .slideShow img{
+    border-radius: 20px;
+  }
+  
   
   h1 {
     font-size: 3.2em;
@@ -197,6 +200,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 80%;
   }
   
   .menulogo {
