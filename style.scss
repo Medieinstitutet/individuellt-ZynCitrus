@@ -46,7 +46,15 @@
     position: sticky;
   }
 
+  .hamburger img {
+    max-width: 50%;
+  }
  
+  #menuBtn {
+    position: fixed;
+    right: 0;
+  }
+
   
   .hidden {
     display: none;
@@ -91,14 +99,10 @@
   .assortment {
     text-align: center;
   }
-  
-  .article-page-1,
-  .article-page-2 {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+  .sectionOne, .sectionTwo, .sectionThree, .sectionFour {
+    max-width: 80%;
+    text-align: center;
+    display: inline-table;
   }
   
   .shop-logos {
