@@ -132,14 +132,17 @@
   }
   
   .assortment {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
   .sectionOne, .sectionTwo, .sectionThree, .sectionFour {
     max-width: 25%;
     text-align: center;
     display: inline-table;
   }
-  
+
   .shop-logos {
     display: flex;
     flex-direction: row;
