@@ -7,6 +7,7 @@
     color: #222222;
     background-color: #38834d;
     box-sizing: border-box;
+    display: flex;
   }
   
   a {
@@ -39,8 +40,26 @@
     bottom: 0;
   }
 
-  .cookies p {
-    padding: 5px;
+  .cookies p{
+    padding: 10px;
+  }
+
+ .settingsBtn .cookiesBtn{
+    padding: 20px;
+    margin: 10px;
+
+  }
+
+  .cookiesBtn{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .settingsBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
   }
 
   
@@ -220,7 +239,7 @@
 
   .noccoLogo {
     position: absolute;
-    top: 68%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;

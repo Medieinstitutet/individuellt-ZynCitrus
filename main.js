@@ -12,20 +12,20 @@ arrow_right
 </button>
 </div>
 `
-/*
-const logo = document.getElementById('logo');
-const noccoLogo = document.getElementById('noccoLogo');
-const slideShow = document.getElementById('slideShow');*/
-const menuBtn = document.getElementById('menuBtn')
-const closeBtn = document.getElementById('closeBtn')
-const arrowLeft = document.getElementById('arrow_left')
-const arrowRight = document.getElementById('arrow_right')
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const arrowLeft = document.getElementById('arrow_left');
+const arrowRight = document.getElementById('arrow_right');
+const cookiesBtn = document.getElementById("cookiesBtn");
+menuBtn.addEventListener("click", openCloseMenu);
+closeBtn.addEventListener("click", openCloseMenu);
+arrowLeft.addEventListener("click", imageSliderMinus);
+arrowRight.addEventListener("click", imageSliderPlus);
+cookiesBtn.addEventListener("click", closeCookies);
 document.querySelector(".noccoLogo").classList.remove("hidden");
 document.querySelector(".logo").classList.remove("hidden");
-menuBtn.addEventListener("click", toggleClass)
-closeBtn.addEventListener("click", toggleClass)
-arrowLeft.addEventListener("click", imageSliderMinus)
-arrowRight.addEventListener("click", imageSliderPlus)
+document.querySelector(".cookies").classList.remove("hidden");
+
 let i = 0;
 let images = [];
 images[0] = "Assets/Slideshow/cola.png";
@@ -52,18 +52,26 @@ function imageSliderMinus(){
 
 imageSliderPlus()
 
-function toggleClass(){
-  console.log('hej');
+function openCloseMenu(){
+console.log('hej');
 
-  menuBtn.classList.toggle('hidden');
-  closeBtn.classList.toggle('show');
-  hamburger.classList.toggle('hidden');
-  hamburger.style.zIndex="100"
-
-  
-  /*
-  slideShow.classList.toggle("hidden");
-  logo.classList.toggle("hidden");
-  noccoLogo.classList.toggle("hidden");*/
-
+	menuBtn.classList.toggle('hidden');
+	closeBtn.classList.toggle('show');
+	hamburger.classList.toggle('hidden');
+	hamburger.style.zIndex="100"
 }
+function closeCookies(){
+	console.log('hej');
+	cookies.classList.add('hidden');
+
+  }
+
+  /* SLASK
+
+
+
+  	cookiesBtn.classList.toggle('show');
+	hamburger.classList.toggle('hidden');
+	hamburger.style.zIndex="100" 
+
+  */
