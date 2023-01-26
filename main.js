@@ -25,6 +25,7 @@ cookiesBtn.addEventListener("click", closeCookies);
 document.querySelector(".noccoLogo").classList.remove("hidden");
 document.querySelector(".logo").classList.remove("hidden");
 document.querySelector(".cookies").classList.remove("hidden");
+const cookies = document.querySelector(".cookies")
 
 let i = 0;
 let images = [];
