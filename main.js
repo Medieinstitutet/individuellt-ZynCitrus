@@ -51,9 +51,9 @@ arrowRight.addEventListener("click", imageSliderPlus);
 
 let i = 0;
 let images = [];
-images[0] = "Assets/Slideshow/cola.png";
-images[1] = "Assets/Slideshow/focus.png";
-images[2] = "Assets/Slideshow/frame.png";
+images[0] = "assets/Slideshow/cola.png";
+images[1] = "assets/Slideshow/focus.png";
+images[2] = "assets/Slideshow/frame.png";
 
 function imageSliderPlus(){
 	document.slider.src = images[i]; 
