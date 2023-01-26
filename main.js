@@ -13,6 +13,8 @@ document.querySelector(".logo").classList.remove("hidden");
 document.querySelector(".cookies").classList.remove("hidden");
 const cookies = document.querySelector(".cookies")
 
+
+
 function renderProducts() {
 for (let j = 0; j < noccoCanArray.length; j++) {
     document.querySelector('#assortment').innerHTML += `
@@ -25,10 +27,6 @@ for (let j = 0; j < noccoCanArray.length; j++) {
 		`
 	}
 }
-
-
-
-
 
 document.querySelector('#slideShow').innerHTML = `
 <div class="imgSlider">
@@ -90,12 +88,6 @@ function closeCookies(){
   }
   renderProducts();
   /* SLASK
-
-document.querySelector('#sectionOne').innerHTML = `
-<h3>${categories[0].name}</h3>
-<p>${categories[0].desc}</p>
-<img src="${noccoCanArray[0].img}" width="75" height="200" loading="lazy" alt="${noccoCanArray[0].img.alt}"/>
-<img src="${noccoCanArray[1].img}" width="75" height="200" loading="lazy" alt="${noccoCanArray[1].img.alt}" />
 
   	cookiesBtn.classList.toggle('show');
 	hamburger.classList.toggle('hidden');
