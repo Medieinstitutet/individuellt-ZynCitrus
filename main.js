@@ -59,6 +59,8 @@ function toggleClass(){
   closeBtn.classList.toggle('show');
   hamburger.classList.toggle('hidden');
   hamburger.style.zIndex="100"
+
+  
   /*
   slideShow.classList.toggle("hidden");
   logo.classList.toggle("hidden");
