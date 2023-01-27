@@ -21,7 +21,7 @@ export const categories = [
 export const noccoCanArray = [
     {
         id: 0,
-        category: ["Focus", "all"],
+        category: ["Nocco Focus", "all"],
         img: ["assets/Drinks/RaspberryFocus.png", "assets/Drinks/Cola.png"],
         alt: ["Black Nocco can with raspberry blast flavour", "Black nocco can with Cola flavour"],
         categoryDesc: categories[0].desc,

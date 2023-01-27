@@ -2,14 +2,13 @@ import './style.css'
 import { noccoCanArray, categories } from './drinksArray.js'
 
 
-const menuBtn = document.getElementById('menuBtn');
+const menuBtn = document.querySelector('.menuBtn');
 const closeBtn = document.getElementById('closeBtn');
 const cookiesBtn = document.getElementById("cookiesBtn");
 menuBtn.addEventListener("click", openCloseMenu);
 closeBtn.addEventListener("click", openCloseMenu);
 cookiesBtn.addEventListener("click", closeCookies);
-document.querySelector(".noccoLogo").classList.remove("hidden");
-document.querySelector(".logo").classList.remove("hidden");
+
 document.querySelector(".cookies").classList.remove("hidden");
 const cookies = document.querySelector(".cookies")
 
@@ -18,8 +17,8 @@ const cookies = document.querySelector(".cookies")
 function renderProducts() {
 for (let j = 0; j < noccoCanArray.length; j++) {
     document.querySelector('#assortment').innerHTML += `
-		<h1>${noccoCanArray[j].category[0]}
-        <h2>${noccoCanArray[j].categoryDesc}</h2>
+		<h2>${noccoCanArray[j].category[0]}</h2>
+        <p>${noccoCanArray[j].categoryDesc}</p>
           <div class="img">
 			<img id="imageOne-${j}" src="${noccoCanArray[j].img[0]}" width="75" height="200" loading="lazy" alt="${noccoCanArray[j].alt[0]}"/>
 			<img id="imageTwo-${j}" src="${noccoCanArray[j].img[1]}" width="75" height="200" loading="lazy" alt="${noccoCanArray[j].alt[1]}"/>		
@@ -88,6 +87,9 @@ function closeCookies(){
   }
   renderProducts();
   /* SLASK
+
+  document.querySelector(".noccoLogo").classList.remove("hidden");
+document.querySelector(".logo").classList.remove("hidden");
 
   	cookiesBtn.classList.toggle('show');
 	hamburger.classList.toggle('hidden');
