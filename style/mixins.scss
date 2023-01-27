@@ -1,0 +1,10 @@
+@mixin Headline {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+@mixin Paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: medium;
+}
