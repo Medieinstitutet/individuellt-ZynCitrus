@@ -28,8 +28,8 @@ export const noccoCanArray = [
     },
     {
         id: 1,
-        category: ["Caffeine Free", "all"],
-        img: ["assets/Drinks/carribien.png", "assets/Drinks/äpple.png"],
+        category: ["Koffeinfri", "all"],
+        img: ["assets/Drinks/carribien.png", "assets/Drinks/apple.png"],
         alt: ["Green nocco can with carribean/pineapple flavour", "Green nocco can with apple flavour"],
         categoryDesc: categories[1].desc,
     },

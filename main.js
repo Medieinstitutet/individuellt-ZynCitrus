@@ -17,20 +17,20 @@ const cookies = document.querySelector(".cookies")
 function renderProducts() {
 for (let j = 0; j < noccoCanArray.length; j++) {
     document.querySelector('.assortment').innerHTML += `
+	<div class="productWrapper">
 		<h2>${noccoCanArray[j].category[0]}</h2>
-        <p>${noccoCanArray[j].categoryDesc}</p>
-		<br/>
-          <div class="img">
+        <p class="product-description" >${noccoCanArray[j].categoryDesc}</p>
+          <div class="imgWrapper">
 			<img id="imageOne-${j}" src="${noccoCanArray[j].img[0]}" width="75" height="200" loading="lazy" alt="${noccoCanArray[j].alt[0]}"/>
 			<img id="imageTwo-${j}" src="${noccoCanArray[j].img[1]}" width="75" height="200" loading="lazy" alt="${noccoCanArray[j].alt[1]}"/>		
 			</div>
-		`
+		</div>`
 	}
 }
 
 document.querySelector('.slideShow').innerHTML = `
 <div class="imgSlider">
-<img name=slider src="Assets/Slideshow/cola.png"></img><br>
+<div class="imgWrapper"><img name=slider src="Assets/Slideshow/cola.png"/></div>
 <button class="material-symbols-outlined arrow_left">
 arrow_left
 </button>
@@ -77,7 +77,8 @@ function openCloseMenu(){
 console.log('Stäng och öppna menyn');
 
 	menuBtn.classList.toggle('hidden');
-	closeBtn.classList.toggle('show');
+	// closeBtn.classList.toggle('show');
+	// closeBtn.classList.toggle('hidden');
 	hamburger.classList.toggle('hidden');
 	hamburger.style.zIndex="100"
 }

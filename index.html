@@ -20,29 +20,37 @@
   <body>
     <nav>
       <button class="material-symbols-outlined menuBtn">menu</button>
+      <div class="logo">
+        <img src="./assets/Icons/logo.png" alt="Brand logo" />
+      </div>
+      <div class="desktopNav">
+        <ul>
+          <li><a>Vårt sortiment</a></li>
+          <span>|</span>
+          <li><a>Här finns vi</a></li>
+          <span>|</span>
+          <li><a>Kontakt</a></li>
+        </ul>
+      </div>
 
       <div id="hamburger" class="hamburger hidden">
-        <button class="material-symbols-outlined hidden closeBtn">close</button>
+        <button class="material-symbols-outlined closeBtn">close</button>
         <ul>
           <li><a>HEM</a></li>
           <li><a>SORTIMENT</a></li>
           <li><a>KONTAKT</a></li>
         </ul>
 
-        <div class="menulogo">
+        <div class="menuLogo">
           <img src="assets/Icons/logo.png" alt="Brand logo in hamburger menu" />
         </div>
-      </div>
-
-      <div class="logo">
-        <img src="./assets/Icons/logo.png" alt="Brand logo" />
       </div>
     </nav>
 
     <main>
       <div class="slideShow"></div>
       <div class="cookies hidden">
-        <h2>Cookies</h2>
+        <p class="cookieHeadline">Cookies</p>
         <p>
           Genom att markera ”Acceptera cookies” godkänner du att xxxx får
           använda cookies, pixlar, taggar och liknande tekniker. Vi använder
@@ -51,21 +59,36 @@
           funktionssyfte, till exempel för att personanpassa reklam och
           förbättra webbplatsen.
         </p>
-        <br />
         <button class="cookiesBtn">Acceptera cookies</button>
         <button class="settingsBtn">Anpassa inställningar</button>
       </div>
 
-      <section class="assortment">
-        <div class="contentWrapperOne"></div>
+      <section class="assortmentWrapper">
         <h1>Vårt Sortiment</h1>
-        <br />
+        <ul>
+          <li>Focus</li>
+          <li>Koffeinfri</li>
+          <li>PWO</li>
+          <li>BCAA</li>
+        </ul>
+        <div class="assortment"></div>
       </section>
 
       <section class="contact">
+        <div class="noccoNews">
+          <h2>Nocco news</h2>
+          <h4>
+            Sveriges mest sålda BCAA-dryck är både vegansk, helt sockerfri,
+            innehåller sex olika vitaminer och finns både med och utan koffein,
+            olika mängd BCAA och med och utan kolsyra och har idag fem olika
+            produktkategorier: BCAA med 180 mg koffein, BCAA+ utan koffein,
+            Focus, PWO och Ice Pop, alla med olika funktioner och smaker. Vilken
+            passar dina behov bäst?
+          </h4>
+        </div>
         <h4>Var Kan Man Köpa Nocco?</h4>
 
-        <article class="shop-logos">
+        <article class="shopLogos">
           <img
             src="/assets/Icons/sats.png"
             alt="Sats logo, white background with orange text Sats"
@@ -91,21 +114,12 @@
             height="60"
           />
         </article>
-
-        <br />
-
         <div class="email">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-          /><br />
+          <input type="email" id="email" name="email" placeholder="Email" />
           <button class="subscribe">Prenumerera</button>
         </div>
       </section>
-
-      <div class="social-media">
+      <div class="socialMedia">
         <img
           src="/assets/Icons/instagram.svg"
           alt="Black Instagram logo"
@@ -132,7 +146,7 @@
         />
       </div>
 
-      <footer class="footer">
+      <footer>
         <img
           src="/assets/Icons/logo.png"
           alt="Black Nocco logo with white text"
@@ -140,7 +154,7 @@
           height="100"
         />
 
-        <div class="footer-links">
+        <div class="footerLinks">
           <ul>
             <li><a href="#">Kontakta oss</a></li>
             <li><a href="#">Jobba hos oss</a></li>
@@ -148,9 +162,22 @@
           </ul>
         </div>
 
-        <p class="footertext">
-          ADDRESS<br />No Carbs<br />Company<br />Box 55929<br />10216 Stockholm
-        </p>
+        <div class="footerContactInformation">
+          <p><span>ADDRESS</span> <span>No Carbs</span></p>
+          <p>
+            <span>Company</span>
+            <span>Box 55929</span>
+            <span>10216 Stockholm</span>
+          </p>
+        </div>
+
+        <!-- <p class="footertext">
+          <span>ADDRESS</span>
+          <span>No Carbs</span>
+          <span>Company</span>
+          <span>Box 55929</span>
+          <span>10216 Stockholm</span>
+        </p> -->
       </footer>
 
       <script type="module" src="main.js"></script>
