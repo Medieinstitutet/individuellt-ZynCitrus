@@ -3,8 +3,8 @@ import { noccoCanArray, categories } from './drinksArray.js'
 
 
 const menuBtn = document.querySelector('.menuBtn');
-const closeBtn = document.getElementById('closeBtn');
-const cookiesBtn = document.getElementById("cookiesBtn");
+const closeBtn = document.querySelector('.closeBtn');
+const cookiesBtn = document.querySelector(".cookiesBtn");
 menuBtn.addEventListener("click", openCloseMenu);
 closeBtn.addEventListener("click", openCloseMenu);
 cookiesBtn.addEventListener("click", closeCookies);
@@ -28,13 +28,13 @@ for (let j = 0; j < noccoCanArray.length; j++) {
 	}
 }
 
-document.querySelector('#slideShow').innerHTML = `
+document.querySelector('.slideShow').innerHTML = `
 <div class="imgSlider">
 <img name=slider src="Assets/Slideshow/cola.png"></img><br>
-<button class="material-symbols-outlined" id="arrow_left">
+<button class="material-symbols-outlined arrow_left">
 arrow_left
 </button>
-<button class="material-symbols-outlined" id="arrow_right">
+<button class="material-symbols-outlined arrow_right">
 arrow_right
 </button>
 </div>
@@ -42,8 +42,8 @@ arrow_right
 
 
 
-const arrowLeft = document.getElementById('arrow_left');
-const arrowRight = document.getElementById('arrow_right');
+const arrowLeft = document.querySelector('.arrow_left');
+const arrowRight = document.querySelector('.arrow_right');
 arrowLeft.addEventListener("click", imageSliderMinus);
 arrowRight.addEventListener("click", imageSliderPlus);
 
