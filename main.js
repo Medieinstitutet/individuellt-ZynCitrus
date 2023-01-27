@@ -1,5 +1,4 @@
-import './style.css'
-import { noccoCanArray, categories } from './drinksArray.js'
+import { noccoCanArray } from './drinksArray.js'
 
 
 const menuBtn = document.querySelector('.menuBtn');
