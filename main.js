@@ -16,9 +16,10 @@ const cookies = document.querySelector(".cookies")
 
 function renderProducts() {
 for (let j = 0; j < noccoCanArray.length; j++) {
-    document.querySelector('#assortment').innerHTML += `
+    document.querySelector('.assortment').innerHTML += `
 		<h2>${noccoCanArray[j].category[0]}</h2>
         <p>${noccoCanArray[j].categoryDesc}</p>
+		<br/>
           <div class="img">
 			<img id="imageOne-${j}" src="${noccoCanArray[j].img[0]}" width="75" height="200" loading="lazy" alt="${noccoCanArray[j].alt[0]}"/>
 			<img id="imageTwo-${j}" src="${noccoCanArray[j].img[1]}" width="75" height="200" loading="lazy" alt="${noccoCanArray[j].alt[1]}"/>		
